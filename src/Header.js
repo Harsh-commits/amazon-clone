@@ -19,17 +19,18 @@ function Header() {
     <div className="header">
       <Link to="/">
         <img
+          id="head_logo"
           className="header_logo"
           src="https://www.pngitem.com/pimgs/b/1-12080_amazon-com-logo-png.png"
         />
       </Link>
 
-      <div className="header_search">
+      <div id="head_search" className="header_search">
         <input className="header_searchInput" type="text" />
         <SearchIcon className="header_searchIcon" />
         {/*  logo  */}
       </div>
-      <div className="header_nav">
+      <div id="head_nav" className="header_nav">
         <Link to={!user && "/login"}>
           <div className="header_option" onClick={handleAuthentication}>
             <span className="header_optionLineOne">

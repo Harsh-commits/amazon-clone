@@ -68,3 +68,31 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .header_search {
+    width: 90%;
+
+    margin-bottom: 3%;
+  }
+  .header_nav {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  div#head_search {
+    order: 3;
+  }
+  div#head_logo {
+    order: 1;
+  }
+  div#head_nav {
+    order: 1;
+  }
+}

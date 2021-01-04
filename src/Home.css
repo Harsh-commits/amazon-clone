@@ -19,7 +19,23 @@
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-/* 
-  
+@media only screen and (max-width: 600px) {
+  .home__row {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_image {
+    /* width: auto; */
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home_image {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/HolidayDeals/Desktop/Fuji_TallHero_HolidayDeals_en_US_1x._CB414278668_.jpg);
+    margin-bottom: auto;
+  }
+}

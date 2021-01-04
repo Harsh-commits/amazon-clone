@@ -38,3 +38,15 @@
   height: 100px;
   margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  .product {
+    width: auto;
+  }
+  .product > button {
+    width: 60%;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
