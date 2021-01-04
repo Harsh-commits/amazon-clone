@@ -24,9 +24,7 @@
     display: flex;
     flex-direction: column;
   }
-  .home_image {
-    /* width: auto; */
-  }
+}
   .home {
     display: flex;
     flex-direction: column;
