@@ -84,6 +84,9 @@
   .header_nav {
     margin-top: 2%;
     margin-bottom: 3%;
+    font-size: 5vw;
+    font-weight: 600;
+    justify-content: space-around !important;
   }
 
   div#head_search {
