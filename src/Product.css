@@ -11,6 +11,11 @@
   background-color: white;
   z-index: 1;
 }
+.product:hover {
+  box-shadow: 2px 2px 10px 1px #7a7878fb;
+  transform: scale(1.02);
+  z-index: 999;
+}
 
 .product__rating > p {
   display: flex;
@@ -48,5 +53,9 @@
     padding: 10px 0;
     font-weight: 600;
     font-size: 14px;
+  }
+  .product > img {
+    position: relative;
+    top: auto;
   }
 }

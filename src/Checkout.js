@@ -9,6 +9,11 @@ import FlipMove from "react-flip-move";
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
 
+  const customEnterAnimation = {
+    from: { transform: "scale(0.5, 1)" },
+    to: { transform: "scale(1, 1)" },
+  };
+
   return (
     <div className="checkout__div">
       <p style={{ fontWeight: "700", fontSize: "14px" }}>
@@ -24,6 +29,16 @@ function Checkout() {
             <h3>{!user ? "" : user.email}</h3>
             <h2 className="checkout__title">Shopping Cart </h2>
 
+            {/* <FlipMove
+              duration={500}
+              delay={10}
+              easing={"cubic-bezier(0.25, 0.5, 0.75, 1)"}
+              staggerDurationBy={30}
+              staggerDelayBy={10}
+              enterAnimation={customEnterAnimation}
+              enterAnimation="accordianVertical"
+              leaveAnimation="accordianVertical"
+            > */}
             {basket.map((item) => (
               <CheckoutProduct
                 id={item.id}
@@ -31,8 +46,10 @@ function Checkout() {
                 image={item.image}
                 price={item.price}
                 rating={item.rating}
+                {...item}
               />
             ))}
+            {/* </FlipMove> */}
           </div>
         </div>
 

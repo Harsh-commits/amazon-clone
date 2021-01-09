@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+.footer_top {
+  background: rgb(27, 43, 58);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 20px 20px 20px 20px;
+  border-bottom: 2px solid gray;
+  line-height: 1.8rem;
+  text-decoration: none;
+}
+.footer_top > a {
+  text-decoration: none;
+}
+.footer_end {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #131921;
+  color: aliceblue;
+}
+/* @media only screen and (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .footer_top {
+    display: none;
+  }
+}
